@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+function fn()
+{
+    array = new Array(10);
+    s = '';
+    s2 = '';
+    max = 1;
+    for (i = 0; i < array.length; i++){
+        a = Math.random()*10+10;
+        array[i] = Math.floor(a);
+        s = s + '  ' + array[i];
+        if (array[i] >= max){
+            max = array[i]
+            s2 = 'Maximum: ' + max + ' Индекс: ' + i
+        }
+    }
+    alert(s);
+    alert(s2)
+}
+</script>
+<body>
+<input type="button" value="Нажать" onclick="fn()">
+</body>
+</html>
